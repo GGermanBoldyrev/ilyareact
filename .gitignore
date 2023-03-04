@@ -26,3 +26,4 @@ yarn-error.log*
 .idea
 /src/consts
 /public/images
+/src/back.png

@@ -1,8 +1,36 @@
-.navbar {
-
-  font-size: 18px;
+.header {
+  margin-top: 25px;
+  width: 100%;
 }
 
 .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  color: white;
+  font-size: 24px;
+
+  li {
+    border-bottom: 1px solid #222222;
+  }
+
+  li:hover {
+    border-bottom: 1px solid white;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.active {
+  border-color: white !important;
 }

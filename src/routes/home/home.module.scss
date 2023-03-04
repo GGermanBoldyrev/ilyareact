@@ -1,0 +1,52 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 136px);
+}
+
+.pageLeft {
+  height: 700px;
+}
+
+.textTitle {
+  font-size: 90px;
+  font-weight: 600;
+  color: #F53145;
+}
+
+.textSubtitle {
+  font-size: 42px;
+}
+
+.textContent {
+  font-size: 32px;
+  font-style: italic;
+  margin-top: 20px;
+  color: #C4C4CC;
+}
+
+.button {
+  background-color: #F53145;
+  color: #d1d1ff;
+  border: none;
+  font-size: 31px;
+  padding: 5px 25px;
+  font-family: 'Shantell Sans', cursive;
+  margin-top: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #b02231;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(110%);
+  }
+}
+
+.pageRight {
+  img {
+    height: 700px;
+  }
+}
