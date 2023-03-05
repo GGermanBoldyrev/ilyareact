@@ -8,49 +8,40 @@ const About = () => {
     return (
         <>
             <div className={s.page}>
-                <div className={s.pageLeft}>
-                    <img src="/images/about.jpg" alt="me" className={s.image}/>
+                <div>
+                    <img src="/images/aboutt.png" alt="me" className={s.image}/>
                 </div>
                 <div className={s.pageRight}>
-                    <div className={s.title}>Привет!</div>
-                    <div className={s.text}>Меня зовут Илья, мне 20 лет. Родной город Санкт-Петербург, Петрегоф. С
-                        саммого раннего детства меня привлекало творчество, и теперь я стал графическим дизайнером.
-                        Имею
-                        3 года комерческого опыта.
+                    <div>
+                        <div className={s.title}>Обо мне</div>
+                        <div className={s.text}>
+                            <div className={s.textPart}>Я графический дизайнер, мне 20 лет, город Санкт-Петербург.</div>
+                            <div className={s.textPart}>За период всей деятельности занимался созданием постеров, полиграфической и печатной
+                                продукции, дизайн упаковки и создавал фирменные стили для проектов.
+                            </div>
+                            <div className={s.textPart}>
+                                Есть опыт в motion-дизайне, но на среднем уровне. В любом случае, есть желание двигаться дальше и развиваться.
+                                реальный опыт в дизайне — 3 года, общий опыт почти 5 лет.
+                            </div>
+                            <div className={s.textPart}>
+                                Было бы очень интересно поработать в компании единомышленников. Формат работы рассматриваю как удаленный, так и работа в офисе.
+                            </div>
+                        </div>
                     </div>
-                    <div className={s.media}>
-                        <div className={s.titleTwo}>
-                            Социальные сети
-                        </div>
-                        <div className={s.icons}>
-                            <a href="https://www.behance.net/tarasovilya" target="_blank"><img src="/images/bh-img.png"
-                                                                                               alt="Bh icon"
-                                                                                               className={s.icon}/></a>
-                            <a href="https://vk.com/tarasovilya" target="_blank"><img src="/images/vk-img.png"
-                                                                                      alt="Vk icon"
-                                                                                      className={s.icon}/></a>
-                            <a href="https://t.me/vlardingen" target="_blank"><img src="/images/tg-img.png"
-                                                                                   alt="Tg icon"
-                                                                                   className={s.icon}/></a>
-                        </div>
+                    <div className={s.works}>
+                        {workplaceArray.map((obj, title) => (
+                            <WorkCard
+                                key={title}
+                                title={obj.title}
+                                subtitle={obj.subtitle}
+                                text={obj.text}
+                            />
+                        ))
+                        }
                     </div>
                 </div>
             </div>
-            <div className={s.titleWork}>Опыт работы</div>
-            <div className={s.works}>
-                {workplaceArray.map((obj, title) => (
-                    <WorkCard
-                        key={title}
-                        title={obj.title}
-                        subtitle={obj.subtitle}
-                        text={obj.text}
-                    />
-                ))
-                }
-            </div>
         </>
-
-
     );
 };
 

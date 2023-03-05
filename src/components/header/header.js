@@ -30,7 +30,7 @@ const Header = () => {
                     </li>
                 </div>
                 <Link to={`/`}>
-                    <img src="/images/logo.svg" alt="Logo" className={s.not}/>
+                    <img src="/images/log.png" alt="Logo" className={s.not}/>
                 </Link>
                 <div className={s.links}>
                     <li className={active === 2 ? s.active : ''}
