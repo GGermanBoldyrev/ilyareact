@@ -2,6 +2,7 @@
   font-family: "NeueMachina-Ultrabold"; /* Имя шрифта */
   src: url(font/NeueMachina-Ultrabold.otf); /* Путь к файлу со шрифтом */
 }
+
 @font-face {
   font-family: "NeueMachina-Regular"; /* Имя шрифта */
   src: url(font/NeueMachina-Regular.otf); /* Путь к файлу со шрифтом */
@@ -33,7 +34,7 @@
   font-family: "NeueMachina-Ultrabold", serif;
   font-size: 73px;
   font-weight: 600;
-  background: -webkit-linear-gradient(45deg,rgba(253,100,79,1), rgba(242,142,38,1));
+  background: -webkit-linear-gradient(45deg, rgba(253, 100, 79, 1), rgba(242, 142, 38, 1));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,7 +57,7 @@
   border: 1px solid #fd644f;
   font-size: 24px;
   padding: 10px 40px;
- font-family: 'Golos Text', sans-serif;
+  font-family: 'Golos Text', sans-serif;
   border-radius: 15px;
   text-align: center;
   margin-top: 60px;
@@ -100,6 +101,7 @@
   }
 }
 
+/* Adaptation */
 
 @media only screen and (max-width: 992px) {
   .pageRight {
@@ -120,8 +122,100 @@
       font-size: 27px;
     }
 
-   .textContent {
-     font-size: 24px;
-   }
+    .textContent {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pageLeft {
+    height: 325px;
+
+    .textTitle {
+      font-size: 40px;
+    }
+
+    .textSubtitle {
+      font-size: 20px;
+    }
+
+    .textContent {
+      font-size: 20px;
+    }
+
+    .icons {
+      width: 250px;
+    }
+
+    .icon {
+      width: 60px;
+    }
+
+    .conTitle {
+      display: none;
+    }
+  }
+
+  .pageRight {
+    img {
+      height: 325px;
+    }
+  ;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .phonePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: calc(100vh - 138px);
+
+    .phonePageBlock {
+      width: 90%;
+      min-height: calc(100vh - 200px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .phoneTitle {
+        text-align: center;
+
+        .textTitle {
+          font-size: 45px;
+        }
+
+        .textSubtitle {
+          font-size: 26px;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .phoneImg {
+      img {
+        height: 400px;
+      }
+    }
+
+    .icons {
+      .icon {
+        width: 75px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 770px) {
+  .phonePage {
+    .phoneImg {
+      img {
+        margin: 20px 0;
+        height: 350px;
+      }
+    }
   }
 }

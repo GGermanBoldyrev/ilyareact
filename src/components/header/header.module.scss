@@ -50,12 +50,11 @@
   }
 }
 
-.burger {
-  display: none;
-}
-
-@media only screen and (max-width: 992px) {
-  .burger {
-    display: none;
+@media only screen and (max-width: 600px) {
+  .header {
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
