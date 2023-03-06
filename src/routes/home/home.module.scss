@@ -99,3 +99,29 @@
     transition: 0.4s;
   }
 }
+
+
+@media only screen and (max-width: 992px) {
+  .pageRight {
+    img {
+      height: 470px;
+    }
+  }
+
+  .pageLeft {
+    height: 474px;
+    margin-right: 50px;
+
+    .textTitle {
+      font-size: 63px;
+    }
+
+    .textSubtitle {
+      font-size: 27px;
+    }
+
+   .textContent {
+     font-size: 24px;
+   }
+  }
+}

@@ -1,8 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import s from './home.module.scss';
-import {workplaceArray} from "../../consts/workplaceArray";
-import WorkCard from "../../components/workCard/workCard";
 
 const Home = () => {
     return (
@@ -18,11 +15,6 @@ const Home = () => {
                     <div className={s.textContent}>
                         "Дизайн это не только про красоту, но и про отражение интересов потребителя"
                     </div>
-                    {/*{<Link to={`contacts`}>
-                        <div className={s.button}>
-                            Связаться со мной
-                        </div>
-                    </Link>}*/}
                 </div>
                 <div className={s.contacts}>
                     <div className={s.conTitle}>

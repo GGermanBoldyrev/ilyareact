@@ -24,7 +24,3 @@ yarn-error.log*
 
 # ignore
 .idea
-/src/consts
-/public/images
-/src/back.png
-/src/backk.png

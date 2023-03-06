@@ -38,3 +38,24 @@
 .not {
   width: 500px;
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .not {
+    width: 400px;
+  }
+
+  .list {
+    font-size: 20px;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .burger {
+    display: none;
+  }
+}

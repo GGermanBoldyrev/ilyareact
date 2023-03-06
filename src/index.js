@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import {
     createBrowserRouter,
-    createRoutesFromElements,
-    Route,
     RouterProvider
 } from "react-router-dom";
 
