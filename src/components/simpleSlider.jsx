@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from "nuka-carousel";
-import s from './slider.module.scss';
 
 const SimpleSlider = () => {
     return (
@@ -8,6 +7,8 @@ const SimpleSlider = () => {
             wrapAround={true}
             slidesToShow={1}
             autoplay={true}
+            pauseOnHover={true}
+            style={{borderRadius: "30px"}}
         >
             <img src="/images/works/1.png" alt="img"/>
             <img src="/images/works/2.png" alt="img"/>

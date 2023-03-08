@@ -1,7 +1,6 @@
 import React from 'react';
 import { Outlet } from "react-router-dom";
-import Header from "../../components/header/header";
-import styles from  './root.module.scss'
+import Header from "../components/header";
 
 const Root = () => {
     return (

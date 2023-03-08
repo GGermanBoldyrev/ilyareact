@@ -7,14 +7,14 @@ import {
 } from "react-router-dom";
 
 /* Routes imports */
-import Root from "./routes/root/root";
-import Home from "./routes/home/home";
-import About from "./routes/about/about";
-import Works from "./routes/works/works";
-import Contacts from "./routes/contacts/contacts";
+import Root from "./routes/root";
+import Home from "./routes/home";
+import About from "./routes/about";
+import Works from "./routes/works";
+import Contacts from "./routes/contacts";
 
 /* Error page */
-import Error from "./routes/error/error";
+import Error from "./routes/error";
 
 const router = createBrowserRouter([
     {
