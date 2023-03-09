@@ -17,6 +17,10 @@ const Title = styled.div`
   color: #FFFAFA;
   font-weight: bolder;
   margin-bottom: 20px;
+
+  @media only screen and (max-width: 991px) {
+    font-size: 45px;
+  }
 `;
 
 const Content = styled.div`
@@ -26,8 +30,12 @@ const Content = styled.div`
 
 const LeftContent = styled.div`
   font-size: 24px;
-  width: 50%;
+  width: 70%;
   color: #C4C4CC;
+
+  @media only screen and (max-width: 991px) {
+    font-size: 20px;
+  }
 `;
 
 const RightContent = styled.div`

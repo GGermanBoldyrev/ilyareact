@@ -6,16 +6,30 @@ import styled from "styled-components";
 
 const Footer = styled.div`
   height: 100px;
+
+  @media only screen and (max-width: 600px) {
+    height: 60px;
+  }
 `;
 
 const SliderBlock = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 100px;
+
+  @media only screen and (max-width: 600px) {
+    margin-top: 40px;
+  }
 `;
 
 const Slider = styled.div`
   width: 600px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
 `;
 
 
