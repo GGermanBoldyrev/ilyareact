@@ -6,10 +6,21 @@ const Page = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 991px) {
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const MainBlock = styled.div`
   width: 70%;
+  @media only screen and (max-width: 991px) {
+    width: 100%;
+  }
 `;
 
 const Title = styled.div`
@@ -18,9 +29,24 @@ const Title = styled.div`
   font-weight: bolder;
   margin-bottom: 20px;
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1200px) {
     font-size: 45px;
   }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 34px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    font-size: 24px;
+  }
+  /*@media only screen and (max-width: 991px) {
+    font-size: 45px;
+  }*/
 `;
 
 const Content = styled.div`
@@ -34,7 +60,15 @@ const LeftContent = styled.div`
   color: #C4C4CC;
 
   @media only screen and (max-width: 991px) {
+    font-size: 22px;
+  }
+  
+  @media only screen and (max-width: 600px) {
     font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    font-size: 16px;
   }
 `;
 
@@ -42,12 +76,25 @@ const RightContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 50px;
   width: 30%;
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 30px;
+  }
 `;
 
 const Subtitle = styled.div`
   font-weight: 600;
   font-size: 32px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 26px;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 const Line = styled.div`
@@ -63,6 +110,14 @@ const LinksBlock = styled.div`
     font-size: 20px;
     margin-bottom: 10px;
     color: #d1d1ff;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 18px;
+    }
+    
+    @media only screen and (max-width: 480px) {
+      font-size: 16px;
+    }
   }
 
   a:last-child {
@@ -120,7 +175,7 @@ const Contacts = () => {
                             <a href="mailto:tarasov.ilia010@gmail.com&body=Здравствуйте, Илья.?subject=Работа"
                                target="_blank"
                                rel="noreferrer"
-                            >tarasov.ilia010@gmail.com</a>
+                            >Mailto: tarasov.ilia010</a>
                         </LinksBlock>
                     </RightContent>
                 </Content>
