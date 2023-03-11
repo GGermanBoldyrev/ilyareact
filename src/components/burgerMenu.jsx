@@ -50,7 +50,7 @@ const Dropdown = styled.div`
 
   @media only screen and (max-width: 600px) {
     margin-right: 5px;
-    background-color: rgba(34, 34, 34, 0.5);
+    background-color: rgba(34, 34, 34, 1);
   }
 `;
 
